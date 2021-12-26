@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Description extends Model
 {
     use HasFactory;
+    protected $guarded = ['id'];
 
     //Realcion 1:1 inversa
     public function lesson(){

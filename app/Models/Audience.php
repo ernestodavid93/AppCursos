@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Audience extends Model
 {
+
+    protected $guarded = ['id'];
+    
     use HasFactory;
     //Relacion 1:n inversa
     public function course(){

@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Section extends Model
 {
     use HasFactory;
+    protected $guarded = ['id'];
 
     //Relacion 1:n inversa
     public function lessons(){
